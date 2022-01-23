@@ -48,7 +48,7 @@ public class SpringConfig {
 
     /* AOP 등록
      * TimeTraceAop.java에 @Components 보다 이렇게 등록하여 AOP 임을 인지시키는 게 좋음
-     * 다만 @Around 대상에 AOP 파일을 제외시켜주어야 함
+     * 다만 @Around 대상에 빈 등록 파일을 제외시켜주어야 함
      * !target(hello.hellospring.configuration.SpringConfig)
      **/
     @Bean
