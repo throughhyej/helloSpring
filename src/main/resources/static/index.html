@@ -51,23 +51,24 @@
         <li><a href="/request-param-multiValueMap?username=id1&username=id2&age=20">요청 파라미터 MultiValueMap</a></li>
         <li><a href="/model-attribute-v1?username=hello&age=20">요청 파라미터 @ModelAttribute v1</a></li>
         <li><a href="/model-attribute-v2?username=hello&age=20">요청 파라미터 @ModelAttribute v2</a></li>
-        <li>단순 텍스트 (/request-body-string-v1) > HttpServletRequest, HttpServletResponse</li>
-        <li>단순 텍스트 (/request-body-string-v2) > InputStream, Writer</li>
-        <li>단순 텍스트 (/request-body-string-v3) > HttpEntity</li>
-        <li>단순 텍스트 (/request-body-string-v4) > @RequestBody</li>
-        <li>JSON (/request-body-json-v1) > HttpServletRequest & ObjectMapper</li>
-        <li>JSON (/request-body-json-v2) > @RequestBody & ObjectMapper</li>
-        <li>JSON (/request-body-json-v3) > @RequestBody & 객체타입 정의</li>
-        <li>JSON (/request-body-json-v4) > HttpEntity<> 객체타입</li>
-        <li>JSON (/request-body-json-v5) > @RequestBody & return @RequestBody value</li>
+        <li>요청 메시지: 단순 텍스트 (/request-body-string-v1) > HttpServletRequest, HttpServletResponse</li>
+        <li>요청 메시지: 단순 텍스트 (/request-body-string-v2) > InputStream, Writer</li>
+        <li>요청 메시지: 단순 텍스트 (/request-body-string-v3) > HttpEntity</li>
+        <li>요청 메시지: 단순 텍스트 (/request-body-string-v4) > @RequestBody</li>
+        <li>요청 메시지: JSON (/request-body-json-v1) > HttpServletRequest & ObjectMapper</li>
+        <li>요청 메시지: JSON (/request-body-json-v2) > @RequestBody & ObjectMapper</li>
+        <li>요청 메시지: JSON (/request-body-json-v3) > @RequestBody & 객체타입 정의</li>
+        <li>요청 메시지: JSON (/request-body-json-v4) > HttpEntity<> 객체타입</li>
+        <li>요청 메시지: JSON (/request-body-json-v5) > @RequestBody & return @RequestBody value</li>
       </ul>
     </li>
     <hr />
     <li>HTTP 응답 - 정적 리소스, 뷰 템플릿
       <ul>
         <li><a href="/basic/hello-form.html">정적 리소스</a></li>
-        <li><a href="/response-view-v1">뷰 템플릿 v1</a></li>
-        <li><a href="/response-view-v2">뷰 템플릿 v2</a></li>
+        <li><a href="/response-view-v1">뷰 템플릿 v1 (ModelAndView)</a></li>
+        <li><a href="/response-view-v2">뷰 템플릿 v2 (Model)</a></li>
+        <li><a href="/response/hello">뷰 템플릿 v3 (비권장)</a></li>
       </ul>
     </li>
     <hr />
