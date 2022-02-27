@@ -24,11 +24,11 @@ public class LogController {
     @RequestMapping("/log-test")
     public String logProcess() {
         String str = "log method";
-        log.trace(" log trace :: {} ", str);
-        log.debug(" log debug :: {} ", str);
-        log.info(" log info :: {} ", str);
-        log.warn(" log warn :: {} ", str);
-        log.error(" log error :: {} ", str);
+        log.trace("##### log trace :: {} ", str);
+        log.debug("##### log debug :: {} ", str);
+        log.info("##### log info :: {} ", str);
+        log.warn("##### log warn :: {} ", str);
+        log.error("##### log error :: {} ", str);
 
         return "OK";
     }
