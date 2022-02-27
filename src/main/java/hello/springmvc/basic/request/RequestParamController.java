@@ -23,6 +23,7 @@ public class RequestParamController {
      * 방안 1. 메소드 return type: void 후 response.getWrite().write() 사용
      * 방안 2. 클래스를 @RestController로 변경
      * 방안 3. 메소드에 @ResponseBody 사용
+     * 방안 4. 메소드 return type: HttpEntity, ResponseEntity로 return newEntity<>("OK");
      **/
 
     /** 스프링 MVC - 기본 기능 > HTTP 요청 파라미터 - 쿼리 파라미터, HTML Form
@@ -106,7 +107,7 @@ public class RequestParamController {
 
 
     @ResponseBody
-    @RequestMapping("/model-attrivute-v1")
+    @RequestMapping("/model-attribute-v1")
     public String modelAttributeV1(@ModelAttribute HelloData helloData) {
         log.info("HelloData = {}", helloData);
         return "OK";
@@ -114,7 +115,7 @@ public class RequestParamController {
 
 
     @ResponseBody
-    @RequestMapping("/model-attrivute-v2")
+    @RequestMapping("/model-attribute-v2")
     public String modelAttributeV2(HelloData helloData) {
         log.info("HelloData = {}", helloData);
         return "OK";
